@@ -1,1 +1,2 @@
-console.log("Working on stuff");
+const foo = 'bar';
+foo.toUpperCase();
