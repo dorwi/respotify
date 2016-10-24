@@ -40,6 +40,10 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         loaders: ["babel-loader"]
+      },
+      {
+        test: /\.jpg$/, 
+        loader: "url-loader?name=/images/[name].[ext]"
       }
     ]
   },
