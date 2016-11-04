@@ -43,7 +43,7 @@ module.exports = {
       },
       {
         test: /\.jpg$/, 
-        loader: "url-loader?name=/images/[name].[ext]"
+        loader: "url-loader?name=./images/[name].[ext]"
       }
     ]
   },

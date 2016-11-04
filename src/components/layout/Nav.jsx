@@ -6,7 +6,7 @@ import { IndexLink, Link } from 'react-router';
 export default class Nav extends React.Component {
   render() {
     return (
-      <nav className="navbar navbar-fixed-top" role="navigation">
+      <nav className="navbar navbar-fixed-top navbar-inverse" role="navigation">
         <div className="container">
           <ul className="nav navbar-nav">
             <li activeClassName="active" onlyActiveOnIndex={true}>

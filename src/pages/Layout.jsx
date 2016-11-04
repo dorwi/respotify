@@ -11,10 +11,10 @@ export default class Layout extends React.Component {
     };
     return (
       <div>
-        <div className="container" style={containerStyle}>
+        <div className="container" >
           <Nav/>
-          <div className="row">
-            <div className="col-lg-12">
+          <div className="row" >
+            <div className="col-lg-12" style={Layout.styles.div}>
 
               {this.props.children}
 
@@ -26,3 +26,15 @@ export default class Layout extends React.Component {
     );
   }
 }
+
+
+
+Layout.styles = {
+  div: {
+    backgroundColor: '#f2f2f2',
+    marginTop: "50px",
+    opacity: 0.9,
+    clear: "both",
+    textAlign: "center",
+  },
+};

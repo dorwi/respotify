@@ -15,11 +15,6 @@ export default class Home extends React.Component {
     return (
         <div>
           <div className="row">
-            <img
-              src={Img1}
-              alt="Not Found Img1"
-              style={imgStyle} 
-            />
           </div>
         </div>
     );
@@ -32,5 +27,10 @@ Home.styles = {
     width: 1200,
     objectFit: 'cover',
     backgroundSize: 'cover',  
+  },
+  div: {
+    textAlign: 'center',
+    background: 'cover',
+    opacity: 1,
   },
 };
