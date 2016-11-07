@@ -13,6 +13,9 @@ export default class Nav extends React.Component {
               <IndexLink to="/">Home</IndexLink>
             </li>
             <li activeClassName="active">
+              <Link to="publications">Publications</Link>
+            </li>
+            <li activeClassName="active">
               <Link to="respotify">Respotify</Link>
             </li>
             <li activeClassName="active" className="navbar-right">

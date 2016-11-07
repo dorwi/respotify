@@ -1,6 +1,6 @@
 import React from 'react';
 
-class SearchBar extends React.Component {
+class PublicationSearchBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -19,18 +19,18 @@ class SearchBar extends React.Component {
 
   handleKeyPress(event) {
     if (event.key === 'Enter') {
-      this.props.getAlbums(this.state.searchTerm);
+      this.props.getPublications(this.state.searchTerm);
     }
   }
 
   render() {
     return (
-      <div style={SearchBar.styles.div}>
-        <h3> Search for an Artist to get the albums from spotify </h3>
+      <div style={PublicationSearchBar.styles.div}>
+        <h3> Search for a publication </h3>
         <input
           onChange={this.handleInputChange}
           onKeyPress={this.handleKeyPress}
-          style={SearchBar.styles.input}
+          style={PublicationSearchBar.styles.input}
         />
       </div>
     );
@@ -38,11 +38,11 @@ class SearchBar extends React.Component {
 }
 
 
-SearchBar.propTypes = {
-  getAlbums: React.PropTypes.func.isRequired,
+PublicationSearchBar.propTypes = {
+  getPublications: React.PropTypes.func.isRequired,
 };
 
-SearchBar.styles = {
+PublicationSearchBar.styles = {
   div: {
     margin: 30,
     textAlign: 'center',
@@ -52,4 +52,4 @@ SearchBar.styles = {
   },
 };
 
-export default SearchBar;
+export default PublicationSearchBar;
