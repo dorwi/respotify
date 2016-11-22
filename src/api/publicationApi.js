@@ -8,8 +8,7 @@ function fetch(request, callback) {
 }
 
 
-export function getPublications(callback) {
-  const request = `https://amphoreus-backend.herokuapp.com/publications`;
+export function getPublications(author, callback) {
+  const request = `https://amphoreus-backend.herokuapp.com/publications/search/findAuteurByRegexp?auteur=%25${author}%25`;
   fetch(request, callback);
 }
-

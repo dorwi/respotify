@@ -16,8 +16,8 @@ class PublicationApp extends React.Component {
     this.processPublications = this.processPublications.bind(this);
   }
 
-  getPublications() {
-    publicationApi.getPublications(this.processPublications);
+  getPublications(author) {
+    publicationApi.getPublications(author, this.processPublications);
   }
 
   processPublications(payload) {
