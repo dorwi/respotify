@@ -3,7 +3,8 @@ import axios from 'axios';
 function fetch(request, callback) {
   axios.get(request)
     .then(response => {
-      callback(response.data);
+    	console.log(response)
+      callback(response.data['_embedded']['publications']);
     });
 }
 
