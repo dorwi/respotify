@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export default class Home extends React.Component {
+export default class PublicationNorms extends React.Component {
   render() {
       var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth
       var windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
@@ -13,25 +13,34 @@ export default class Home extends React.Component {
         <div>
           <div className="row">
              <div className="col-md-8">
-              <div className="panel panel-default" style={Home.styles.panel}>
+              <div className="panel panel-default" style={PublicationNorms.styles.panel}>
                 <div className="panel-body">
-<h4>Welcome to Amphoreus ! This site represents the on-line database 
-of the "Bulletin Amphorologique" edited by the Revue des etudes grecques. Not only 
-does it allow readers to look up all the reviews appearing in the Bulletin, it also 
-announces the publication of studies dealing with amphoras and their stamps, automatically 
-including them in the list of new publications ; where necessary these studies will 
-also be reviewed in the Bulletin. The norms for the publication of amphora stamps and a 
-list of bibliographical abbreviations are also available.</h4>
+<h4>
+Fundamental principles
+</h4>
+
+
                 </div>
                 </div>
               </div>
+
+            <div className="col-md-4">
+            <div className="panel panel-default" style={PublicationNorms.styles.panel}>
+                <div className="panel-body">
+                <h4>Contact us at:</h4>
+                <p>
+                bulletin@amphoreus.org
+                </p>
+                </div>
+            </div>
+            </div>
           </div>
         </div>
     );
   }
 }
 
-Home.styles = {
+PublicationNorms.styles = {
   img: {
     flex: 1,
     width: 1200,
