@@ -12,3 +12,13 @@ export function getPublications(author, callback) {
   const request = `https://amphoreus-backend.herokuapp.com/publications/search/findAuteurByRegexp?auteur=%25${author}%25`;
   fetch(request, callback);
 }
+
+
+export function createPublication(data, callback){
+	const url = `https://amphoreus-backend.herokuapp.com/publications`;
+	axios.post(url, data)
+		.then(callback)
+		.catch(function (error){
+			console.log(error);
+		});
+}
