@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Nav from "../components/layout/Nav";
+import Nav2 from "../components/layout/Nav";
 import Footer from "../components/layout/Footer";
 
 
@@ -12,7 +12,7 @@ export default class Layout extends React.Component {
     return (
       <div>
         <div className="container" >
-          <Nav/>
+          <Nav2/>
           <div className="row" >
             <div className="col-lg-12" style={Layout.styles.div}>
 
@@ -31,10 +31,6 @@ export default class Layout extends React.Component {
 
 Layout.styles = {
   div: {
-    backgroundColor: '#f2f2f2',
     marginTop: "50px",
-    opacity: 0.9,
-    clear: "both",
-    textAlign: "center",
   },
 };

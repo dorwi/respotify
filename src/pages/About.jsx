@@ -83,12 +83,17 @@ About.styles = {
     backgroundSize: 'cover',  
   },
   div: {
-    textAlign: 'center',
-    background: 'cover',
-    opacity: 1,
+    marginTop: "50px",
+    opacity: 0.9,
+    clear: "both",
+    textAlign: "center",
   },
   panel: {
     margin: 40,
-    fontFamily: "monospace"
+    fontFamily: "monospace",
+    backgroundColor: '#f2f2f2',
+    opacity: 0.9,
+    clear: "both",
+    textAlign: "center",
   },
 };

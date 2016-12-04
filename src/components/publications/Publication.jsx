@@ -2,9 +2,10 @@ import React from 'react';
 
 const Publication = (props) => {
   return (
-    <li>
-      {props.publ.auteur} - {props.publ.titre}
-    </li>
+    <tr>
+      <td>{props.publ.auteur}</td>
+      <td>{props.publ.titre}</td>
+    </tr>
   );
 };
 
