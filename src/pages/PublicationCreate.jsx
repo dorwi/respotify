@@ -41,7 +41,11 @@ class PublicationCreate extends React.Component {
   }
 
   submitButton() {
-    publicationApi.createPublication(this.state, function (e){
+    const data = {
+      "auteur" : this.state.author,
+      "titre" : this.state.title
+    }
+    publicationApi.createPublication(data, function (e){
       console.log(e);
     });
   }
