@@ -17,7 +17,8 @@ export function getPublications(author, callback) {
 export function createPublication(data, callback){
 	const url = `https://amphoreus-backend.herokuapp.com/publications`;
 	axios.post(url, data)
-		.then(callback)
+		.then(response => {
+			callback(response)})
 		.catch(function (error){
 			console.log(error);
 		});
